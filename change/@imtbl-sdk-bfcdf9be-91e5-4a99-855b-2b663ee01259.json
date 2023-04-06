@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "change file comment",
+  "packageName": "@imtbl/sdk",
+  "email": "chris@webglowit.net",
+  "dependentChangeType": "patch"
+}
