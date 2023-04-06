@@ -21,6 +21,6 @@ const StarkExAPIFactory = (config: Configuration) => {
   return { ...StarkEx };
 };
 
-const bah = 1;
+const bah = 2;
 
 export { StarkExAPIFactory, bah };
