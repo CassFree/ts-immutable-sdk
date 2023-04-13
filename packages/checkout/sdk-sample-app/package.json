@@ -1,6 +1,6 @@
 {
-  "name": "@imtbl/checkout-sample-app",
-  "version": "0.1.0",
+  "name": "@imtbl/checkout-sdk-sample-app",
+  "version": "0.0.0",
   "browserslist": {
     "production": [
       ">0.2%",

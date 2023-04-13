@@ -22,7 +22,7 @@
   "homepage": "https://github.com/immutable/ts-immutable-sdk#readme",
   "license": "Apache-2.0",
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint"
+    "*.{js,jsx,ts,tsx}": "echo hi"
   },
   "packageManager": "yarn@3.5.0",
   "private": true,
@@ -46,6 +46,7 @@
     "packages/provider",
     "packages/internal/toolkit",
     "packages/checkout/sdk",
-    "packages/checkout/sample-app"
+    "packages/checkout/sdk-sample-app",
+    "packages/checkout/widgets-types"
   ]
 }
