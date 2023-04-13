@@ -38,6 +38,9 @@
     "test": "wsrun --exclude-missing -e test",
     "typecheck": "wsrun --exclude-missing typecheck"
   },
+  "resolutions": {
+    "@biom3/design-tokens": "0.1.4-beta"
+  },
   "workspaces": [
     "publish",
     "packages/config",
@@ -47,6 +50,8 @@
     "packages/internal/toolkit",
     "packages/checkout/sdk",
     "packages/checkout/sdk-sample-app",
+    "packages/checkout/widgets",
+    "packages/checkout/widgets-sample-app",
     "packages/checkout/widgets-types"
   ]
 }
