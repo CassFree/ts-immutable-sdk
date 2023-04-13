@@ -67,4 +67,5 @@ export default [
   ...getFileBuild('starkex'),
   ...getFileBuild('provider'),
   ...getFileBuild('passport'),
+  ...getFileBuild('checkout'),
 ];

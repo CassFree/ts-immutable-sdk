@@ -27,6 +27,9 @@
   "packageManager": "yarn@3.5.0",
   "private": true,
   "repository": "immutable/ts-immutable-sdk.git",
+  "resolutions": {
+    "@biom3/design-tokens": "0.1.4-beta"
+  },
   "scripts": {
     "build": "wsrun -p @imtbl/sdk -e -r --stages build && yarn syncpack:format",
     "build:all": "wsrun --stages build",
@@ -37,9 +40,6 @@
     "syncpack:format": "yarn syncpack format",
     "test": "wsrun --exclude-missing -e test",
     "typecheck": "wsrun --exclude-missing typecheck"
-  },
-  "resolutions": {
-    "@biom3/design-tokens": "0.1.4-beta"
   },
   "workspaces": [
     "publish",

@@ -2439,7 +2439,7 @@ __metadata:
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.4.0
     "@testing-library/user-event": ^13.5.0
-    "@types/jest": ^27.5.2
+    "@types/jest": ^29.4.0
     "@types/node": ^16.18.16
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11
@@ -2472,7 +2472,7 @@ __metadata:
     jest-environment-jsdom: ^29.4.3
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-router-dom: ^6.8.2
+    react-router-dom: ^6.10.0
     react-scripts: 5.0.1
     typescript: ^4.9.5
     web-vitals: ^2.1.4
@@ -2511,7 +2511,7 @@ __metadata:
     parcel: ^2.8.3
     react: ^18.2.0
     react-dom: ^18.2.0
-    typescript: ^5.0.2
+    typescript: ^4.9.5
   languageName: unknown
   linkType: soft
 
@@ -2524,13 +2524,13 @@ __metadata:
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.4.0
     "@testing-library/user-event": ^13.5.0
-    "@types/jest": ^27.5.2
+    "@types/jest": ^29.4.0
     "@types/node": ^16.18.12
     "@types/react": ^18.0.28
-    "@types/react-dom": ^18.0.10
+    "@types/react-dom": ^18.0.11
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-router-dom: ^6.8.2
+    react-router-dom: ^6.10.0
     react-scripts: 5.0.1
     typescript: ^4.9.5
     web-vitals: ^2.1.4
@@ -2657,7 +2657,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@imtbl/sdk@workspace:publish"
   dependencies:
+    "@biom3/design-tokens": 0.1.4-beta
+    "@biom3/react": ^0.1.3-beta
     "@ethersproject/providers": ^5.7.2
+    "@imtbl/checkout-sdk-web": 0.0.0
+    "@imtbl/checkout-ui-types": 0.0.0
     "@imtbl/config": 0.0.0
     "@imtbl/core-sdk": ^1.0.2-alpha.5
     "@imtbl/passport": 0.0.0
@@ -2680,7 +2684,7 @@ __metadata:
     oidc-client-ts: ^2.2.1
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-router-dom: ^6.8.2
+    react-router-dom: ^6.10.0
     rollup: ^3.17.2
     rollup-plugin-dts: ^5.3.0
     semver: ^7.4.0
@@ -5253,16 +5257,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^27.5.2":
-  version: 27.5.2
-  resolution: "@types/jest@npm:27.5.2"
-  dependencies:
-    jest-matcher-utils: ^27.0.0
-    pretty-format: ^27.0.0
-  checksum: 7e11c6826aa429ad990dc262e4e4b54aa36573287fddf15773e4137f07d11d3105f0dd9f1baff73252160a057df23f5529bb83b1bf83cd3f45f9460a5ca5c22e
-  languageName: node
-  linkType: hard
-
 "@types/jsdom@npm:^20.0.0":
   version: 20.0.1
   resolution: "@types/jsdom@npm:20.0.1"
@@ -5397,7 +5391,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.0.10, @types/react-dom@npm:^18.0.11":
+"@types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.0.11":
   version: 18.0.11
   resolution: "@types/react-dom@npm:18.0.11"
   dependencies:
@@ -12737,7 +12731,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-matcher-utils@npm:^27.0.0, jest-matcher-utils@npm:^27.5.1":
+"jest-matcher-utils@npm:^27.5.1":
   version: 27.5.1
   resolution: "jest-matcher-utils@npm:27.5.1"
   dependencies:
@@ -16521,7 +16515,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^27.0.0, pretty-format@npm:^27.0.2, pretty-format@npm:^27.5.1":
+"pretty-format@npm:^27.0.2, pretty-format@npm:^27.5.1":
   version: 27.5.1
   resolution: "pretty-format@npm:27.5.1"
   dependencies:
@@ -16921,7 +16915,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:^6.10.0, react-router-dom@npm:^6.8.2":
+"react-router-dom@npm:^6.10.0":
   version: 6.10.0
   resolution: "react-router-dom@npm:6.10.0"
   dependencies:
@@ -19270,16 +19264,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.0.2":
-  version: 5.0.4
-  resolution: "typescript@npm:5.0.4"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 82b94da3f4604a8946da585f7d6c3025fff8410779e5bde2855ab130d05e4fd08938b9e593b6ebed165bda6ad9292b230984f10952cf82f0a0ca07bbeaa08172
-  languageName: node
-  linkType: hard
-
 "typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
   version: 4.9.5
   resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"
@@ -19287,16 +19271,6 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: ab417a2f398380c90a6cf5a5f74badd17866adf57f1165617d6a551f059c3ba0a3e4da0d147b3ac5681db9ac76a303c5876394b13b3de75fdd5b1eaa06181c9d
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@^5.0.2#~builtin<compat/typescript>":
-  version: 5.0.4
-  resolution: "typescript@patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=85af82"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: bb309d320c59a26565fb3793dba550576ab861018ff3fd1b7fccabbe46ae4a35546bc45f342c0a0b6f265c801ccdf64ffd68f548f117ceb7f0eac4b805cd52a9
   languageName: node
   linkType: hard
 

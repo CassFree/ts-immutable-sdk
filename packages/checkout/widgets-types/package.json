@@ -1,19 +1,8 @@
 {
   "name": "@imtbl/checkout-ui-types",
-  "version": "0.0.0",
   "description": "TypeScript definitions for @imtbl/checkout-ui",
-  "source": "index.ts",
-  "main": "dist/main.js",
-  "module": "dist/module.js",
-  "types": "dist/types.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build",
-    "build:dist": "npm i && npm run build && npm run dist",
-    "dist": "npm pack && cp imtbl-checkout-ui-types-0.0.1.tgz ../../depends/"
-  },
+  "version": "0.0.0",
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -26,5 +15,14 @@
     "@types/react-dom": "^18.0.11",
     "parcel": "^2.8.3",
     "typescript": "^4.9.5"
-  }
+  },
+  "license": "ISC",
+  "scripts": {
+    "build": "parcel build",
+    "build:dist": "npm i && npm run build && npm run dist",
+    "dist": "npm pack && cp imtbl-checkout-ui-types-0.0.1.tgz ../../depends/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "source": "index.ts",
+  "types": "dist/types.d.ts"
 }

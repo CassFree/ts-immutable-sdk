@@ -1,7 +1,18 @@
 {
   "name": "@imtbl/checkout-widgets-sample-app",
   "version": "0.0.0",
-  "private": true,
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -21,25 +32,14 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
+  "private": true,
   "scripts": {
-    "start": "GENERATE_SOURCEMAP=false react-scripts start",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "reload:deps": "rm -rf package-lock.json && npm run reload:sdk && npm run reload:types && npm i",
     "reload:sdk": "npm uninstall @imtbl/checkout-sdk-web --no-save",
-    "reload:types": "npm uninstall @imtbl/checkout-ui-types --no-save"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "reload:types": "npm uninstall @imtbl/checkout-ui-types --no-save",
+    "start": "GENERATE_SOURCEMAP=false react-scripts start",
+    "test": "react-scripts test"
   }
 }
