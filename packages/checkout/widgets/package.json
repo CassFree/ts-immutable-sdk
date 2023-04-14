@@ -47,12 +47,9 @@
   "private": true,
   "scripts": {
     "build": "cp src/build.tsx src/index.tsx && GENERATE_SOURCEMAP=false react-scripts build",
-    "build:dist": "npm run reload:deps && npm run build && npm run dist",
-    "dist": "mkdir -p ../sample-app/public/lib/js && cp build/static/js/main.*.js ../sample-app/public/lib/js/imtbl-checkout.js",
+    "build:dist": "yarn build && yarn dist",
+    "dist": "mkdir -p ../sample-widgets-app/public/lib/js && cp build/static/js/main.*.js ../sample-widgets-app/public/lib/js/imtbl-checkout.js",
     "eject": "react-scripts eject",
-    "reload:deps": "rm -rf package-lock.json && npm run reload:sdk && npm run reload:types && npm i",
-    "reload:sdk": "npm uninstall @imtbl/checkout-sdk-web --no-save",
-    "reload:types": "npm uninstall @imtbl/checkout-ui-types --no-save",
     "start": "cp src/app.tsx src/index.tsx && PORT=3001 GENERATE_SOURCEMAP=false react-scripts start",
     "test": "react-scripts test"
   }

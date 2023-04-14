@@ -80,7 +80,7 @@
   "peerDependencies": {},
   "repository": "immutable/ts-immutable-sdk.git",
   "scripts": {
-    "build": "yarn packageList & yarn updateDependencies && rm -rf dist && NODE_ENV=production rollup --config rollup.config.js && rm -rf dist/types",
+    "build": "yarn packageList && yarn updateDependencies && rm -rf dist && NODE_ENV=production rollup --config rollup.config.js && rm -rf dist/types",
     "lint": "eslint ./src --ext .ts,.jsx,.tsx --max-warnings=0",
     "packageList": "./scripts/generate-package-list.sh",
     "typecheck": "tsc --noEmit --jsx preserve",

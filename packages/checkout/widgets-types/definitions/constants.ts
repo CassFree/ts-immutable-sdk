@@ -5,11 +5,8 @@ export enum Network {
 }
 
 export enum WidgetTheme {
-  LIGHT = "light",
-  DARK = "dark",
-  CUSTOM = "custom",
+  LIGHT = 'light',
+  DARK = 'dark',
+  CUSTOM = 'custom',
 }
-
-export enum ConnectionProviders {
-  METAMASK = "metamask"
-}
+export { ConnectionProviders } from '@imtbl/checkout-sdk-web';
