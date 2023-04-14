@@ -24,4 +24,4 @@ yarn-error.log*
 
 cypress/videos/*
 
-./index.tsx
+./src/index.tsx

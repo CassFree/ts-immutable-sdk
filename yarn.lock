@@ -2427,34 +2427,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@imbtl/checkout-widgets@workspace:packages/checkout/widgets":
-  version: 0.0.0-use.local
-  resolution: "@imbtl/checkout-widgets@workspace:packages/checkout/widgets"
-  dependencies:
-    "@biom3/design-tokens": 0.1.4-beta
-    "@biom3/react": ^0.1.3-beta
-    "@ethersproject/providers": ^5.7.2
-    "@imtbl/checkout-sdk-web": 0.0.0
-    "@imtbl/checkout-ui-types": 0.0.0
-    "@testing-library/jest-dom": ^5.16.5
-    "@testing-library/react": ^13.4.0
-    "@testing-library/user-event": ^13.5.0
-    "@types/jest": ^29.4.0
-    "@types/node": ^16.18.16
-    "@types/react": ^18.0.28
-    "@types/react-dom": ^18.0.11
-    cypress: ^12.8.1
-    ethers: ^5.7.2
-    local-cypress: ^1.2.6
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-router-dom: ^6.10.0
-    react-scripts: 5.0.1
-    typescript: ^4.9.5
-    web-vitals: ^2.1.4
-  languageName: unknown
-  linkType: soft
-
 "@imtbl/checkout-sdk-sample-app@workspace:packages/checkout/sdk-sample-app":
   version: 0.0.0-use.local
   resolution: "@imtbl/checkout-sdk-sample-app@workspace:packages/checkout/sdk-sample-app"
@@ -2529,6 +2501,34 @@ __metadata:
     "@types/node": ^16.18.12
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-router-dom: ^6.10.0
+    react-scripts: 5.0.1
+    typescript: ^4.9.5
+    web-vitals: ^2.1.4
+  languageName: unknown
+  linkType: soft
+
+"@imtbl/checkout-widgets@workspace:packages/checkout/widgets":
+  version: 0.0.0-use.local
+  resolution: "@imtbl/checkout-widgets@workspace:packages/checkout/widgets"
+  dependencies:
+    "@biom3/design-tokens": 0.1.4-beta
+    "@biom3/react": ^0.1.3-beta
+    "@ethersproject/providers": ^5.7.2
+    "@imtbl/checkout-sdk-web": 0.0.0
+    "@imtbl/checkout-ui-types": 0.0.0
+    "@testing-library/jest-dom": ^5.16.5
+    "@testing-library/react": ^13.4.0
+    "@testing-library/user-event": ^13.5.0
+    "@types/jest": ^29.4.0
+    "@types/node": ^16.18.16
+    "@types/react": ^18.0.28
+    "@types/react-dom": ^18.0.11
+    cypress: ^12.8.1
+    ethers: ^5.7.2
+    local-cypress: ^1.2.6
     react: ^18.2.0
     react-dom: ^18.2.0
     react-router-dom: ^6.10.0
