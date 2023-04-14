@@ -45,7 +45,7 @@ export function BridgeWidget(props:BridgeWidgetProps) {
     return (fromNetwork && bridgingNetworks.includes(fromNetwork))
         ? NetworkChainMap[fromNetwork]
         : ChainId.ETHEREUM;
-  },[fromNetwork, bridgingNetworks]);
+  },[fromNetwork]);
 
   const firstRender = useRef(true);
   const checkout = useMemo(() => new Checkout(), []);

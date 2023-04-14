@@ -7,47 +7,51 @@ import {
   IMTBLWidgetEvents,
   WidgetTheme,
   ConnectionProviders,
-} from '@imtbl/checkout-ui-types'
+} from '@imtbl/checkout-ui-types';
 
 function ConnectUI() {
-
-  useEffect( () => {
-
+  useEffect(() => {
     // Add event listeners for the IMXConnectWidget and handle event types appropriately
-    const handleConnectEvent = (((event: CustomEvent) => {
-      console.log(event)
-      console.log("Getting data from within the event");
-      switch(event.detail.type) {
+    const handleConnectEvent = ((event: CustomEvent) => {
+      console.log(event);
+      console.log('Getting data from within the event');
+      switch (event.detail.type) {
         case ConnectEventType.SUCCESS: {
-          const eventData = event.detail.data as ConnectionSuccess
+          const eventData = event.detail.data as ConnectionSuccess;
           console.log(eventData.providerPreference);
-          console.log(eventData.timestamp)
+          console.log(eventData.timestamp);
           break;
         }
         case ConnectEventType.FAILURE: {
-          const eventData = event.detail.data as ConnectionFailed
+          const eventData = event.detail.data as ConnectionFailed;
           console.log(eventData.reason);
-          console.log(eventData.timestamp)
+          console.log(eventData.timestamp);
           break;
         }
         default:
-        console.log('did not match any expected event type')
+          console.log('did not match any expected event type');
       }
-    }) as EventListener)
+    }) as EventListener;
 
-    window.addEventListener(IMTBLWidgetEvents.IMTBL_CONNECT_WIDGET_EVENT, handleConnectEvent);
-    return () =>{
-      window.removeEventListener(IMTBLWidgetEvents.IMTBL_CONNECT_WIDGET_EVENT, handleConnectEvent);
-    }
+    window.addEventListener(
+      IMTBLWidgetEvents.IMTBL_CONNECT_WIDGET_EVENT,
+      handleConnectEvent
+    );
+    return () => {
+      window.removeEventListener(
+        IMTBLWidgetEvents.IMTBL_CONNECT_WIDGET_EVENT,
+        handleConnectEvent
+      );
+    };
   }, []);
 
   return (
     <div className="Connect">
       <h1 className="sample-heading">Checkout Connect (Web Component)</h1>
-       <imtbl-connect
+      <imtbl-connect
         providerPreference={ConnectionProviders.METAMASK}
-        theme={WidgetTheme.DARK}>
-        </imtbl-connect>
+        theme={WidgetTheme.DARK}
+      ></imtbl-connect>
     </div>
   );
 }

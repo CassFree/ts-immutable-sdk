@@ -4,7 +4,6 @@ import { mount } from 'cypress/react18';
 import { WidgetTheme } from '@imtbl/checkout-ui-types';
 import { cySmartGet } from '../../lib/testUtils';
 import { Checkout, ConnectionProviders } from '@imtbl/checkout-sdk-web';
-import { BigNumber } from 'ethers'
 
 describe('BuyWidget tests', () => {
   beforeEach(() => {

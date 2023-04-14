@@ -1,4 +1,9 @@
-import { ChainId, Checkout, GetAllBalancesParams, GetBalanceResult } from '@imtbl/checkout-sdk-web';
+import {
+  ChainId,
+  Checkout,
+  GetAllBalancesParams,
+  GetBalanceResult,
+} from '@imtbl/checkout-sdk-web';
 import { Web3Provider } from '@ethersproject/providers';
 import { useState } from 'react';
 
@@ -22,7 +27,7 @@ function GetAllBalances(props: BalanceProps) {
     const params: GetAllBalancesParams = {
       provider,
       walletAddress: address,
-      chainId: ChainId.ETHEREUM
+      chainId: ChainId.ETHEREUM,
     };
 
     try {
@@ -34,7 +39,6 @@ function GetAllBalances(props: BalanceProps) {
     }
   }
 
-
   return (
     <div className="Connect">
       <h1 className="sample-heading">Get All Balances</h1>
@@ -43,9 +47,9 @@ function GetAllBalances(props: BalanceProps) {
         Get All Balances (Ethereum)
       </button>
       {allBalances?.map((balance) => (
-      <div key={balance.token.symbol}>
-        {balance.token.symbol + " " + balance.formattedBalance}
-      </div>
+        <div key={balance.token.symbol}>
+          {balance.token.symbol + ' ' + balance.formattedBalance}
+        </div>
       ))}
     </div>
   );

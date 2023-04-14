@@ -10,7 +10,7 @@ function BuyWebView() {
 
   useEffect(() => {
     if (themeParam) setTheme(themeParam as WidgetTheme)
-  }, [])
+  }, [themeParam])
 
   return(
     <imtbl-buy 

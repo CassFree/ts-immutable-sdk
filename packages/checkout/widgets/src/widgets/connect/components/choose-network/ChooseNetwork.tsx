@@ -20,7 +20,7 @@ export function ChooseNetwork (props:ChooseNetworkProps) {
         updateView(ConnectWidgetViews.FAIL, 'No wallet provider connected')
         return
       }
-      const switchedNetwork = await checkout.switchNetwork({ provider, chainId: ChainId.POLYGON });
+      await checkout.switchNetwork({ provider, chainId: ChainId.POLYGON });
       updateView(ConnectWidgetViews.SUCCESS)
 
     } catch (err:any) {

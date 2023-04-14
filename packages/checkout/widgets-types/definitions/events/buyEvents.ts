@@ -1,26 +1,26 @@
 export type BuyEvent<T> = {
   type: BuyEventType;
   data: T;
-}
+};
 
 export enum BuyEventType {
   SUCCESS = 'success',
   FAILURE = 'failure',
   NOT_CONNECTED = 'not_connected',
-  CLOSE = 'close'
+  CLOSE = 'close',
 }
 
-export type BuyClose = {}
+export type BuyClose = {};
 
 export type BuyNotConnected = {
   providerPreference: string;
-}
+};
 
 export type BuySuccess = {
   timestamp: number;
-}
+};
 
 export type BuyFailed = {
   reason: string;
   timestamp: number;
-}
+};
