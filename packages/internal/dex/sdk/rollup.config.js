@@ -4,6 +4,7 @@ import json from '@rollup/plugin-json';
 export default {
   input: './src/index.ts',
   output: {
+    format: 'es',
     dir: 'dist',
   },
   plugins: [
